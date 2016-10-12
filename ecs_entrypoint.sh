@@ -5,6 +5,7 @@ echo "IP=${IP}"
 
 docker-entrypoint.sh agent          \
   -server                           \
+  -ui                               \
   -advertise $IP                    \
   -client 0.0.0.0                   \
   -bootstrap-expect ${SERVER_COUNT} \
