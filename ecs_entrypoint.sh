@@ -8,6 +8,7 @@ docker-entrypoint.sh agent          \
   -advertise $IP                    \
   -client 0.0.0.0                   \
   -bootstrap-expect ${SERVER_COUNT} \
+  -datacenter ${DATACENTER}         \
   -atlas ${ENV_NAME}                \
   -atlas-join                       \
   -atlas-token ${ATLAS_TOKEN}
