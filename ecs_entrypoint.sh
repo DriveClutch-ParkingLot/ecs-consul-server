@@ -6,10 +6,11 @@ echo "IP=${IP}"
 docker-entrypoint.sh agent          \
   -server                           \
   -ui                               \
-  -advertise $IP                    \
-  -client 0.0.0.0                   \
-  -bootstrap-expect ${SERVER_COUNT} \
-  -dc ${DATACENTER}                 \
-  -atlas ${ENV_NAME}                \
+  -advertise=$IP                    \
+  -client=0.0.0.0                   \
+  -bootstrap-expect=${SERVER_COUNT} \
+  -datacenter=${DATACENTER}         \
+  -atlas=${ENV_NAME}                \
   -atlas-join                       \
-  -atlas-token ${ATLAS_TOKEN}
+  -atlas-token=${ATLAS_TOKEN}       \
+  -log_level=${LOG_LEVEL}

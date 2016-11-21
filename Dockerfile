@@ -7,5 +7,6 @@ ENV SERVER_COUNT ""
 ENV DATACENTER ""
 ENV ENV_NAME ""
 ENV ATLAS_TOKEN ""
+ENV LOG_LEVEL "warn"
 
 CMD "/ecs_entrypoint.sh"
