@@ -13,4 +13,4 @@ docker-entrypoint.sh agent          \
   -atlas=${ENV_NAME}                \
   -atlas-join                       \
   -atlas-token=${ATLAS_TOKEN}       \
-  -log_level=${LOG_LEVEL}
+  -log-level=${LOG_LEVEL}
