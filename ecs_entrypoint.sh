@@ -9,6 +9,6 @@ docker-entrypoint.sh agent              \
   -advertise=$IP                        \
   -client=0.0.0.0                       \
   -bootstrap-expect=${SERVER_COUNT}     \
-  -retry-join-ec2-tag-key="consulenv"   \
+  -retry-join-ec2-tag-key="Cluster"     \
   -retry-join-ec2-tag-value=${ENV_NAME} \
   -log-level=${LOG_LEVEL}
