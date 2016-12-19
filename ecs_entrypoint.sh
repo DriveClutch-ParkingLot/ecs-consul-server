@@ -7,8 +7,9 @@ docker-entrypoint.sh agent              \
   -server                               \
   -ui                                   \
   -advertise=$IP                        \
-  -client=0.0.0.0                       \
   -bootstrap-expect=${SERVER_COUNT}     \
+  -client=0.0.0.0                       \
+  -datacenter=${DATACENTER}             \
   -retry-join-ec2-tag-key="Cluster"     \
   -retry-join-ec2-tag-value=${ENV_NAME} \
   -log-level=${LOG_LEVEL}
