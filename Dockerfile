@@ -1,4 +1,4 @@
-FROM consul:0.7.1
+FROM consul:0.7.5
 MAINTAINER David Hallum <david@driveclutch.com>
 
 COPY ecs_entrypoint.sh /
